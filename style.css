@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--White: hsl(0, 0%, 100%);
+--Rose-White: hsl(330, 100%, 98%);
+--Eggshell: hsl(30, 54%, 90%);
+--Light-Grey: hsl(30, 18%, 87%);
+--Wenge-Brown: hsl(30, 10%, 34%);
+--Dark-Charcoal: hsl(24, 5%, 18%);
+--title-color: hsl(14, 45%, 36%);
+--Dark-Raspberry: hsl(332, 51%, 32%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    min-height: 100vh;
+    background-color: var(--Eggshell);
+}
+
+h1, h2 {
+    font-family: "Young Serif", sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.hero-main {
+    margin: 8rem auto;
+    max-width: 70rem;
+    height: auto;
+    margin-inline: auto;
+    background-color: white;
+    padding: 3rem 3rem;
+    border-radius: 1.6rem;
+}
+
+.content-img  img{
+    width: 100%;
+    display: block;
+    border-radius: 1.6rem;
+}
+
+.hero-introduction .introduction-title {
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: var(--Dark-Charcoal);
+    margin: 2rem 0;
+}
+
+.hero-introduction .introduction-description {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: var(--Wenge-Brown);
+    letter-spacing: 0.01rem;
+}
+
+.card-preparation {
+    background-color: var(--Rose-White);
+    padding:3rem;
+    margin-bottom: 2rem;
+    border-radius: 1.6rem;
+}
+
+.card-preparation .preparation-title {
+    color: var(--Dark-Raspberry);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card-preparation .list-preparation {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+
+ li {
+    margin-top: 1.6rem;
+}
+
+.card-preparation .list-preparation li::marker {
+    color: var(--Dark-Raspberry);
+}
+
+
+.ingredients .ingredients-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--title-color);
+}
+
+.ingredients .ingredients-list {
+    font-size: 1.6rem;
+    list-style-type: square;
+    margin-left: 2.1rem;
+}
+
+
+.ingredients .ingredients-list li::marker {
+    color: var(--title-color);
+}
+
+.hero-main .line-divisor {
+    display: block;
+    max-width: 100%;
+    
+    margin: 3rem 0;
+    border-bottom: 1px solid var(--Light-Grey);
+}
+
+.hero-instructions .instructions-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--title-color);
+}
+
+.hero-instructions .instructions-list {
+    font-size: 1.6rem;
+    margin-left: 2.1rem;
+}
+
+.hero-instructions .instructions-list li {
+    padding-left: 1rem;
+}
+
+.hero-instructions .instructions-list li::marker {
+    color: var(--title-color);
+}
+
+.hero-nutrition .nutrition-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--title-color);
+}
+
+.hero-nutrition .nutrition-description {
+    margin: 1.6rem 0;
+    font-size: 1.6rem;
+}
+
+.hero-nutrition .nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.6rem;
+}
+
+.hero-nutrition .nutrition-table tr td {
+    border-bottom: 1px solid var(--Light-Grey);
+    text-align: left;
+    padding: 1rem;
+}
+
+.hero-nutrition .nutrition-table .none {
+    border: none;
+}
+
+.hero-nutrition .nutrition-table {
+    border-bottom: none;
+}
+
+.hero-nutrition .nutrition-table .bold_kcal {
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 33.75em) {
+    .hero-main {
+        margin: 0;
+        padding: 0;
+        text-align: center;   
+    }
+
+    .sm-33-75 {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .content-img img {
+        border-radius: 0;
+    }
+
+    .content-img {
+        border-radius: 0;
+    }
+
+    li {
+        text-align: left;
+    }
+
+    h1, h2, h3, p {
+        text-align: left;
+    }
+
+    .introduction-title {
+        padding-top: 1.6rem;
+        line-height: 1;
+    }
+
+    .introduction-description {
+        padding-bottom: 2rem;
+        line-height: 1.3;
+    }
+
+
+
+    .hero-instructions {
+        padding-left : 3rem;
+        padding-right: 3rem;
+    }
+
+    .hero-nutrition {
+        padding-left : 3rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+
+
+
